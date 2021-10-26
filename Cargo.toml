@@ -1,0 +1,16 @@
+[workspace]
+
+members = [
+    "u8-indexable-array",
+    "u16-indexable-array",
+]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+
+[profile.bench]
+opt-level = 3
+lto = true
+codegen-units = 1
